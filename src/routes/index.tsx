@@ -11,6 +11,8 @@ import {
   Check,
   ShieldCheck,
   MessageCircle,
+  Star,
+  Quote,
 } from "lucide-react";
 
 import heroShop from "@/assets/hero-shop.jpg";
@@ -133,6 +135,46 @@ const services = [
       "Other special occasions",
     ],
     note: "Your occasion, your design, your invitation.",
+  },
+];
+
+const testimonials = [
+  {
+    quote:
+      "Got my wedding invitations designed and printed here — beautiful work and delivered on time. Highly recommended.",
+    name: "Priya S.",
+    role: "Invitation printing",
+  },
+  {
+    quote:
+      "They helped me with my online government application step by step. Patient, honest and quick service.",
+    name: "Ramesh K.",
+    role: "e-Seva services",
+  },
+  {
+    quote:
+      "Our office computers are under their AMC. Any issue is fixed fast, and the systems run smoothly all year.",
+    name: "Anand Traders",
+    role: "System AMC",
+  },
+];
+
+const faqs = [
+  {
+    q: "Do you take bulk printing orders?",
+    a: "Yes. We handle bulk colour and black & white printing for schools, offices and events. Visit or call us for rates on large orders.",
+  },
+  {
+    q: "Can you help with online government applications?",
+    a: "Yes. We assist with e-Seva and government portal applications, form filling, and document upload. Availability depends on the relevant portal.",
+  },
+  {
+    q: "What does the computer AMC cover?",
+    a: "Our AMC covers regular maintenance, troubleshooting, software installation and hardware checks for desktops and systems. Contact us to discuss a plan for your setup.",
+  },
+  {
+    q: "How long does a custom invitation take?",
+    a: "Most invitation designs are ready for approval within 1–2 days, and printing is completed shortly after you approve the design.",
   },
 ];
 
