@@ -1,4 +1,4 @@
-declare module "*.jpg?format=webp&quality=*" {
+declare module "*format=webp*" {
   const src: string;
   export default src;
 }
