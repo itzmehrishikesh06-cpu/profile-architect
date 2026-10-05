@@ -399,6 +399,60 @@ function Index() {
           </div>
         </section>
 
+        {/* Testimonials */}
+        <section className="bg-secondary/60 py-20 md:py-28">
+          <div className="mx-auto max-w-6xl px-5">
+            <Reveal>
+              <p className="text-xs tracking-[0.25em] text-muted-foreground uppercase">
+                Testimonials
+              </p>
+              <h2 className="mt-4 text-3xl sm:text-4xl">What our customers say</h2>
+              <div className="gold-rule mt-6 h-px w-40" />
+            </Reveal>
+            <div className="mt-12 grid gap-6 md:grid-cols-3">
+              {testimonials.map((t, i) => (
+                <Reveal key={t.name} delay={i * 80}>
+                  <figure className="surface-card flex h-full flex-col p-8 hover:-translate-y-1 hover:shadow-lift">
+                    <Quote className="size-6 text-accent" />
+                    <blockquote className="mt-4 flex-1 text-foreground/85">{t.quote}</blockquote>
+                    <figcaption className="mt-6 border-t border-border pt-4">
+                      <div className="flex gap-1 text-accent" aria-label="5 star rating">
+                        {Array.from({ length: 5 }).map((_, s) => (
+                          <Star key={s} className="size-4 fill-current" />
+                        ))}
+                      </div>
+                      <p className="mt-2 font-semibold">{t.name}</p>
+                      <p className="text-sm text-muted-foreground">{t.role}</p>
+                    </figcaption>
+                  </figure>
+                </Reveal>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ */}
+        <section id="faq" className="mx-auto max-w-4xl px-5 py-20 md:py-28">
+          <Reveal>
+            <p className="text-xs tracking-[0.25em] text-muted-foreground uppercase">FAQ</p>
+            <h2 className="mt-4 text-3xl sm:text-4xl">Common questions</h2>
+            <div className="gold-rule mt-6 h-px w-40" />
+          </Reveal>
+          <div className="mt-10 space-y-4">
+            {faqs.map((f, i) => (
+              <Reveal key={f.q} delay={i * 60}>
+                <details className="surface-card group p-6 open:shadow-lift">
+                  <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-semibold [&::-webkit-details-marker]:hidden">
+                    {f.q}
+                    <span className="text-accent transition-transform group-open:rotate-45">+</span>
+                  </summary>
+                  <p className="mt-4 text-muted-foreground">{f.a}</p>
+                </details>
+              </Reveal>
+            ))}
+          </div>
+        </section>
+
         {/* Contact */}
         <section id="contact" className="bg-primary py-20 text-primary-foreground md:py-28">
           <div className="mx-auto grid max-w-6xl gap-12 px-5 lg:grid-cols-2">
