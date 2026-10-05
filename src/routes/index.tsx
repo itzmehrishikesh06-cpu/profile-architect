@@ -15,12 +15,12 @@ import {
   Quote,
 } from "lucide-react";
 
-import heroShop from "@/assets/hero-shop.jpg";
-import servicePrinting from "@/assets/service-printing.jpg";
-import serviceEseva from "@/assets/service-eseva.jpg";
-import serviceMobile from "@/assets/service-mobile.jpg";
-import serviceAmc from "@/assets/service-amc.jpg";
-import serviceInvitations from "@/assets/service-invitations.jpg";
+import heroShop from "@/assets/hero-shop.jpg?format=webp&quality=82";
+import servicePrinting from "@/assets/service-printing.jpg?format=webp&quality=80";
+import serviceEseva from "@/assets/service-eseva.jpg?format=webp&quality=80";
+import serviceMobile from "@/assets/service-mobile.jpg?format=webp&quality=80";
+import serviceAmc from "@/assets/service-amc.jpg?format=webp&quality=80";
+import serviceInvitations from "@/assets/service-invitations.jpg?format=webp&quality=80";
 import { Reveal } from "@/components/Reveal";
 
 export const Route = createFileRoute("/")({
@@ -274,6 +274,8 @@ function Index() {
                 alt="Our digital service shop counter with printers and computers"
                 width={1600}
                 height={1008}
+                fetchPriority="high"
+                decoding="async"
                 className="relative rounded-3xl object-cover shadow-lift"
               />
             </div>
@@ -343,6 +345,7 @@ function Index() {
                       src={s.image}
                       alt={s.alt}
                       loading="lazy"
+                      decoding="async"
                       width={1024}
                       height={768}
                       className="h-52 w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
