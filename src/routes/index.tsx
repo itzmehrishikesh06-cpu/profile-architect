@@ -47,12 +47,12 @@ export const Route = createFileRoute("/")({
 });
 
 const SHOP = {
-  name: "[Your Shop Name]",
-  address: "[Your Shop Address]",
-  phone: "[Your Contact Number]",
-  email: "[Your Email Address]",
-  hours: "[Your Shop Timings]",
-  maps: "#contact",
+  name: "Sri Digital Seva Centre",
+  address: "Main Road, Near Bus Stand",
+  phone: "+91 90000 00000",
+  email: "contact@sridigitalseva.in",
+  hours: "Mon – Sat: 9:00 AM – 8:30 PM · Sun: 10:00 AM – 2:00 PM",
+  maps: "https://maps.google.com",
 };
 
 const services = [
