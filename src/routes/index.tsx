@@ -527,6 +527,17 @@ function Index() {
           <p className="mt-4 text-sm">Serving you with trust and quality since 1st May 2019.</p>
         </div>
       </footer>
+
+      {/* Floating WhatsApp button */}
+      <a
+        href={`https://wa.me/${SHOP.phone.replace(/\D/g, "")}`}
+        target="_blank"
+        rel="noreferrer"
+        aria-label="Chat with us on WhatsApp"
+        className="fixed right-5 bottom-5 z-50 flex size-14 items-center justify-center rounded-full bg-accent text-accent-foreground shadow-lift transition-transform hover:-translate-y-1"
+      >
+        <MessageCircle className="size-6" />
+      </a>
     </div>
   );
 }
