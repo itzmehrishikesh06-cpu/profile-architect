@@ -25,6 +25,9 @@ import { Reveal } from "@/components/Reveal";
 
 export const Route = createFileRoute("/")({
   head: () => ({
+    links: [
+      { rel: "preload", as: "image", href: heroShop, fetchPriority: "high" },
+    ],
     meta: [
       {
         title: "Printing, e-Seva, Mobile & Computer AMC Services | Since 2019",
