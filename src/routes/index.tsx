@@ -48,7 +48,7 @@ const nav = [{ label: "Services", href: "#services" }, { label: "Our story", hre
 function Index() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [category, setCategory] = useState("All services");
-  const [selectedService, setSelectedService] = useState(services[0].title);
+  const [selectedService, setSelectedService] = useState(services[0]?.title ?? "Something else");
   const [name, setName] = useState("");
   const [details, setDetails] = useState("");
   function submitEnquiry(event: FormEvent<HTMLFormElement>) {
