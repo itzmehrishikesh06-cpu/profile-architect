@@ -82,7 +82,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "description",
         content:
-          "Printing, e-Seva online services, mobile support, computer AMC and customized invitations — trusted service since 1st May 2017.",
+          "Printing, e-Seva online services, mobile support, computer AMC and customized invitations — trusted service since 1st May 2019.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
