@@ -4,6 +4,6 @@
 - [x] Verify navigation, enquiries, images, and smaller screens.
 
 # Detail review
-- [ ] Inspect every section at narrow, tablet, and desktop widths.
-- [ ] Refine layout, accessibility, form behaviour, and content consistency.
-- [ ] Verify the corrected interactions and final website health.
+- [x] Inspect every section at narrow, tablet, and desktop widths.
+- [x] Refine layout, accessibility, form behaviour, and content consistency.
+- [x] Verify the corrected interactions and final website health.
